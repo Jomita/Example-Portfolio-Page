@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Droid+Sans|Rock+Salt|Shadows+Into+Light');
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+} 
+.row{
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-left:35px;
+	padding-right:35px ;
+	}
+    
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+            }
+    #div-mob {
+    margin-top: 60px;
+            }
+    .portfolio, .gallery, .contact {
+        margin: 1px -50px;
+                }
+    #think {
+    display: none;
+    }
+    #workspace {
+    position: relative;
+    top: 10px;
+    }
+    .second-left {
+    padding-right: 5px;
+}
+    #tnc {
+        margin-bottom: 5px; 
+    }
+       }
+@media only screen and (min-width: 768px) {
+    .pres-text {
+        margin-left: 20px;
+            }
+    #portrait {
+        margin-right: 10px;
+    } 
+    .menu-toggle {
+        padding-right: 15px;
+    }
+    .wrapper {
+    padding: 20px 100px 10px 100px;
+    font-family: 'Droid Sans', sans-serif;
+    background: #f6f2f7;
+                    }
+    #div-mob {
+        display: none;
+    }
+    #tnc {
+    margin-right: 20px;
+}
+#gine {
+    margin-left: 20px;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: 'Droid Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+header {
+    color: black;
+  position: relative;
+    font-family: 'Cabin Sketch', cursive;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    border-bottom: 1px solid #bababa;
+    padding-top: 0.1px;
+    background: ;
+        }
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  max-width: 250px;
+  max-height: inherit;
+  margin-left: -20px;
+    }
+
+.site-nav {
+  position: absolute;
+  top: 25px;
+  right: 0%;
+    font-family: 'Cabin Sketch', cursive;
+  background: transparent;
+  -webkit-clip-path: circle(0px at top right);
+          clip-path: circle(0px at top right);
+  -webkit-transition: -webkit-clip-path ease-in-out 700ms;
+  transition: -webkit-clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms;
+    }
+
+.site-nav--open {
+  -webkit-clip-path: circle(150% at top right);
+          clip-path: circle(150% at top right);
+        }
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    background-color: transparent;
+    font-family: 'Cabin Sketch', cursive;
+        }
+
+.site-nav li {
+  border-bottom: 1px solid white;
+    background-color: #f9e0fc;
+     }
+
+.site-nav li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.site-nav li:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.site-nav a {
+  color: black;
+  display: block;
+  padding: 2em 3.2em 2em 4em;
+  text-transform: uppercase;
+  text-decoration: none;
+    font-size: 12px;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 200;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: white;
+  color: #ac10b5;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    padding-left: 2em;
+    position: absolute;
+    top: 3em;
+    right: .8em;
+    cursor: pointer;
+    margin-right: 5px;
+            }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #ac10b5;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 15px;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-3px) rotate(-90deg);
+          transform: translateY(-3px) rotate(-90deg);
+    }
+
+.intro {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 10px;
+    }
+
+#portrait {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+   }
+.pres-text {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 20px;
+    border-left: 6px dotted #922199;
+    padding-left: 20px;
+    line-height: 1.3em;
+    padding-bottom: 20px;
+    
+    }
+.pres-text span {
+    font-style: italic;
+}
+
+.pres-text::first-letter {
+    color: #922199;
+    font-size: 200%;
+    font-weight: bold;
+}
+.text-intro {
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+    color: #922199;
+    margin-bottom: -5px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 36px;
+    font-weight: normal;
+}
+hr.hr1 { 
+  border: 0; 
+  height: 1px; 
+    margin-left: 10px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+.social-media {
+    text-align: center;
+    padding-top: 16px;
+    }
+.social-media a {
+    padding-left: 10px;
+}
+.get-in-touch {
+    font-family: 'Rock Salt', cursive;
+    color: #922199;
+    position: relative;
+    text-align: left;
+    line-height: 50px;
+        }
+.portfolio {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 10px;
+    }
+.portfolio h3 {
+    text-align: center;
+}
+.gal-img, .gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.gal-img {
+    box-shadow: 10px 10px 5px #e0e0e0;
+}
+
+.portfolio h2, .gallery h2, .contact h2 {
+margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+    color: #922199;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    font-weight: normal;
+}
+.h2-img {
+    padding-right: 30px;
+    padding-left: 30px;
+    }
+.gallery {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 10px;
+    }
+.first-left {
+    padding-right: 5px;
+}
+.gallery img {
+    padding-bottom: 5px;
+}
+.contact {
+    background-color: white;
+    padding: 40px 40px 80px 40px;
+}
+.gallery h2 {
+    padding-bottom: 30px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #922199;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Droid Sans', sans-serif;
+    }
+input[type=text]:focus {
+    border: 1px solid cadetblue;
+}
+input[type=submit] {
+    background-color: #e477f9;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: cadetblue;
+}
+.contact-text {
+    padding: 20px 50px 20px 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+.contact-text span {
+    color: #922199;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#chat {
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.5);
+    padding-top: 10px;
+}
+.very-end {
+    width: 100%;
+    background-color: #922199;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+}
+.very-end a {
+    color: beige;
+}
+#goToTop {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 10px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #922199; 
+    color: white; 
+    font-family: 'Droid Sans', sans-serif;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+#goToTop:hover {
+    background-color: cadetblue; /* Add a dark-grey background on hover */
+}
+

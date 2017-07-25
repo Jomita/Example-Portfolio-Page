@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Nomadic Camera</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <button onclick="topFunction()" id="goToTop" title="Go to top">Top</button>
+  <header>   
+      <div class="container">
+<h1 class="title"><img src="images/logo-image.png" class="logo" id="logo-image">
+    </h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#link1">About</a></li>
+        <li><a href="#link2">Portfolio</a></li>
+        <li><a href="#link3">Artwork</a></li>
+        <li><a href="#link4">Contact</a></li>
+      </ul>
+  </nav>
+  
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>  
+</div>
+</header>
+    <div class="wrapper">
+    <div class="row intro">
+        <div class="col-4"><img src="images/portrait-round1.gif" id="portrait"></div>
+        <div class="col-8"><h2 class="text-intro">
+            On the path to become a front-end developer!
+            </h2>
+            <br>
+            <hr class="hr1">
+            <p class="pres-text" id="link1">Just finished an undergraduate degree in Tourism Management and decided to follow the dark call of <span>CSS selectors</span>, <span>jQuery libraries</span> and <span>JS function constructors</span>. <br><br>Combining my passion for arts, photography and design with web technologies. </p>
+            <p class="social-media">
+                <span class="get-in-touch">... Get in Touch!</span><br>
+                <a href="#"><img src="images/github2.png"></a>
+                <a href="#"><img src="images/googleplus.png"></a>
+                <a href="#"><img src="images/instagram.png"></a>
+                <a href="#"><img src="images/facebook.png"></a>
+                <a href="#"><img src="images/youtube.png"></a>
+                <hr class="hr1" id="div-mob">
+            </p>
+        </div> <!-- end col-8 -->
+        </div> <!-- end intro row -->
+        <div class="portfolio">
+            <div class="row">
+                <h2><img src="images/think.png" class="h2-img" id="think link2">Portfolio<img src="images/workspace.png" class="h2-img" id="workspace"></h2>
+                <h3>Two projects I've built on Squarespace and Wordpress</h3>
+            <div class="col-6">
+                <a href="https://www.thenomadiccamera.com" target="_blank"><img src="images/snapshort-joma.PNG" class="gal-img" id="tnc"></a>
+                </div>
+                <div class="col-6">
+                    <a href="https://www.woginekocht.de" target="_blank"><img src="images/snapshot-gine.PNG" class="gal-img" id="gine"></a>
+                </div>
+            </div> <!-- end row -->
+            <hr class="hr1" id="div-mob">
+        </div> <!-- end portfolio -->
+            <div class="gallery">
+                    <div class="row">
+                    <h2 id="link3">Artwork</h2>
+                    <div class="col-6"><img src="images/gal5.jpg" class="first-left"></div>
+                    <div class="col-6"><img src="images/gal7.jpeg" class="second-left"></div></div> <!-- end row -->
+                <div class="row">
+                    <div class="col-6"><img src="images/gal1.jpg" class="first-left"></div>
+                    <div class="col-6"><img src="images/gal9.jpg" class="second-left"></div>
+                </div><!-- end row -->
+                <hr class="hr1" id="div-mob">
+                </div> <!-- end gallery -->
+    <div class="contact">
+        <h2 id="link4">Contact Me</h2>
+        <div class="row">
+            <div class="col-6 contact-text">
+                                <p><span>You would like to get in touch with me?</span> For any questions, inquiries, jobs, messages - please feel free to contact me in either English, Spanish, German or French!
+                </p>
+                <p><img src="images/chat.png" id="chat"></p>
+            </div> <!-- end col-6 -->
+            <div class="col-6">
+            <form action="/action_page.php">
+                <label for="name">Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Name...">
+                
+                <label for="lname">Email address</label>
+                <input type="text" id="email" name="emailaddress" placeholder="Email address...">
+                                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." style="height: 200px"></textarea>
+                
+                <input type="submit" value="Submit">
+                </form>
+            </div> <!-- end col-6 -->
+            
+        </div> <!-- end row -->
+        <hr class="hr1" id="div-mob">
+        </div> <!-- end contact -->
+           </div> <!-- end wrapper -->
+    <div class="very-end">
+    <p>
+    <script>document.write(new Date().getFullYear())</script> © Written and coded by <a href="https://www.thenomadiccamera.com">The Nomadic Camera</a></p>
+    </div>
+      
+    
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="index.js"></script>
+</html>
